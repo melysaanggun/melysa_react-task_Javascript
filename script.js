@@ -1,4 +1,4 @@
-var a = 5;
+/* var a = 5;
 let b = "kampus merdeka";
 const nama = "Budi";
 let terdaftar = false;
@@ -27,11 +27,13 @@ if (terdaftar === true){
 a = b;
 /*nama = b;*/
 
-/* console.log("asal diakses = " + asal); */
+/* console.log("asal diakses = " + asal); *//*
 console.log("a adalah = "+ a);
 console.log("b adalah = "+ b);
 
 perkenalan();
+
+*/
 
 /* 
 Task 1 a 
@@ -101,6 +103,67 @@ Yang berarti tidak dapat dideteksi di luar blok function itu sendiri. Sehingga, 
 tidak mendeteksi nilai dari variabel asal yang bersembunyi di blok function. Jika ingin dieksekusi, maka
 variabel asal harus dideklarasikan di luar blok function.
 */ 
+
+/*Task no. 3
+Soal : Lakukan destructuring pada kode berikut :
+const foo = ["Budi", "Sita", "Ayu"];
+Sehingga Budi tersimpan di variabel a, 
+Sita tersimpan di variabel b,
+Ayu tersimpan di variabel c
+
+Jawab :
+const foo = ["Budi", "Sita", "Ayu"];
+const [a,b,c] = foo;
+console.log(a,b,c);
+*/
+
+/* Task no. 4
+Soal : Terdapat variabel seperti berikut
+let bdays = ['10-17', '05-19', '20-19']
+Ubahlah tanda - dalam variabel menjadi / sehingga output menjadi
+['10/17', '05/19', '20/19']
+
+Jawab : 
+let bdays = ['10-17', '05-19', '20-19'];
+let bday = bdays1.map(ubahSimbol);
+
+function ubahSimbol(array){
+    for (let element of array){
+        if element == '-' {
+            element == '/';
+        }
+    }
+}
+*/
+
+/* Task no. 5
+Soal : Terdapat variabel seperti berikut
+let value = [1,2,3,4,5,6]
+Kalikan setiap value dalam array tersebut dengan dua sehingga output menjadi
+[2,4,6,8,10,12]
+
+Jawab : 
+let value = [1,2,3,4,5,6];
+let times = value.map(x => x * 2);
+
+console.log(times);
+*/
+
+/* Task no. 6
+Soal : Terdapat variabel seperti berikut
+let arr = [1.5, 2.56, 5.1, 12.33]
+Bulatkan ke atas variabel dalam array tersebut sehingga output menjadi
+[2, 3, 5, 12]
+
+Jawab : 
+let arr = [1.5, 2.56, 5.1, 12.33];
+let bulat = arr.map(x => Math.ceil(x));
+
+console.log(bulat);
+
+*/
+
+
 
 
 
